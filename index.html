@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hårstudio | صالون فاخر للعناية بالشعر والتجميل</title>
+  <meta name="description" content="صالون فاخر للعناية بالشعر والتجميل للنساء والرجال بأحدث التقنيات وأفضل الخبراء. Luxury hair & beauty salon, premium barber, hair color, styling and grooming." />
+  <meta name="keywords" content="Luxury Hair Salon, Beauty Salon, Barber Shop, Hair Styling, Hair Color, Women's Salon, Men's Barber, Premium Grooming, Modern Beauty Studio, صالون شعر فاخر, صالون تجميل, حلاق رجالي" />
+  <meta name="author" content="LUXE Salon" />
+  <meta name="theme-color" content="#0c0c0d" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Hårstudio | صالون فاخر للعناية بالشعر والتجميل" />
+  <meta property="og:description" content="صالون فاخر للعناية بالشعر والتجميل للنساء والرجال بأحدث التقنيات وأفضل الخبراء." />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1200&q=80" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Cairo:wght@300;400;600;700;800&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- JSON-LD SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HairSalon",
+    "name": "Hårstudio",
+    "image": "https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1200&q=80",
+    "description": "صالون فاخر للعناية بالشعر والتجميل للنساء والرجال",
+    "priceRange": "$$$",
+    "telephone": "+46853176670",
+    "address": { "@type": "PostalAddress", "streetAddress": "Hallundavägen 1", "postalCode": "145 68", "addressLocality": "Norsborg", "addressCountry": "SE" },
+    "openingHours": ["Mo-Fr 10:00-19:00", "Sa 10:00-16:00", "Su 11:00-15:00"],
+    "sameAs": ["https://www.instagram.com/hallundaharstudio/", "https://www.facebook.com/pages/Hallunda-H%C3%A5rstudio/180322911996307", "https://www.tiktok.com/@hallunda_centrum"]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Progress bar -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- Navbar -->
+  <header class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#home" class="logo">
+        <span class="logo-mark">H</span>
+        <span class="logo-text">Hårstudio<small data-i18n="logo_sub">صالون فاخر</small></span>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#home" data-i18n="nav_home">الرئيسية</a>
+        <a href="#about" data-i18n="nav_about">من نحن</a>
+        <a href="#services" data-i18n="nav_services">الخدمات</a>
+        <a href="#gallery" data-i18n="nav_gallery">المعرض</a>
+        <a href="#testimonials" data-i18n="nav_reviews">الآراء</a>
+        <a href="#contact" data-i18n="nav_contact">تواصل</a>
+        <a href="#booking" class="nav-cta" data-i18n="nav_book">احجز موعد</a>
+      </nav>
+
+      <div class="nav-actions">
+        <div class="lang-menu" id="langMenu">
+          <button class="lang-toggle" id="langToggle" aria-haspopup="listbox" aria-expanded="false" aria-label="Language">
+            <svg class="globe" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.5 2.5 16 0 18M12 3c-2.5 2.5-2.5 16 0 18"/></svg>
+            <span id="langCurrent">العربية</span>
+            <svg class="chevron" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <ul class="lang-dropdown" id="langDropdown" role="listbox">
+            <li><button type="button" data-lang="ar" role="option">العربية</button></li>
+            <li><button type="button" data-lang="en" role="option">English</button></li>
+            <li><button type="button" data-lang="sv" role="option">Svenska</button></li>
+          </ul>
+        </div>
+        <button class="burger" id="burger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <div class="hero-slider" id="heroSlider">
+      <div class="hero-slide active" style="background-image:url('https://images.unsplash.com/photo-1633681926022-84c23e8cb2d6?auto=format&fit=crop&w=1920&q=80')"></div>
+      <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&w=1920&q=80')"></div>
+      <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1920&q=80')"></div>
+      <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=1920&q=80')"></div>
+    </div>
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+      <span class="hero-eyebrow reveal" data-i18n="hero_eyebrow">صالون فاخر · للنساء والرجال</span>
+      <h1 class="hero-title reveal" data-i18n="hero_title">الجمال يبدأ من هنا</h1>
+      <p class="hero-sub reveal" data-i18n="hero_sub">صالون فاخر للعناية بالشعر والتجميل للنساء والرجال بأحدث التقنيات وأفضل الخبراء.</p>
+      <div class="hero-buttons reveal">
+        <a href="#booking" class="btn btn-gold" data-i18n="hero_btn1">احجز موعد الآن</a>
+        <a href="#services" class="btn btn-ghost" data-i18n="hero_btn2">تعرف على خدماتنا</a>
+      </div>
+    </div>
+
+    <div class="hero-dots" id="heroDots"></div>
+    <a href="#about" class="scroll-cue" aria-label="scroll"><span></span></a>
+  </section>
+
+  <!-- Marquee -->
+  <div class="marquee">
+    <div class="marquee-track">
+      <span data-i18n="mq1">قصّ وتصفيف</span><i>✦</i>
+      <span data-i18n="mq2">صبغة وبالياج</span><i>✦</i>
+      <span data-i18n="mq3">كيراتين وبروتين</span><i>✦</i>
+      <span data-i18n="mq4">حلاقة رجالية</span><i>✦</i>
+      <span data-i18n="mq5">تسريحات العرائس</span><i>✦</i>
+      <span data-i18n="mq6">عناية فاخرة</span><i>✦</i>
+      <span data-i18n="mq1">قصّ وتصفيف</span><i>✦</i>
+      <span data-i18n="mq2">صبغة وبالياج</span><i>✦</i>
+      <span data-i18n="mq3">كيراتين وبروتين</span><i>✦</i>
+      <span data-i18n="mq4">حلاقة رجالية</span><i>✦</i>
+      <span data-i18n="mq5">تسريحات العرائس</span><i>✦</i>
+      <span data-i18n="mq6">عناية فاخرة</span><i>✦</i>
+    </div>
+  </div>
+
+  <!-- About -->
+  <section class="about" id="about">
+    <div class="container about-grid">
+      <div class="about-media reveal">
+        <div class="about-img main" style="background-image:url('https://images.unsplash.com/photo-1522337660859-02fbefca4702?auto=format&fit=crop&w=900&q=80')"></div>
+        <div class="about-img sub" style="background-image:url('https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=600&q=80')"></div>
+        <div class="about-badge">
+          <strong>10+</strong>
+          <span data-i18n="about_badge">سنوات خبرة</span>
+        </div>
+      </div>
+
+      <div class="about-text">
+        <span class="eyebrow reveal" data-i18n="about_eyebrow">من نحن</span>
+        <h2 class="section-title reveal" data-i18n="about_title">تجربة فاخرة تليق بإطلالتك</h2>
+        <p class="reveal" data-i18n="about_p1">في <strong>LUXE</strong> نمزج بين الفن والاحتراف لنمنحك تجربة عناية استثنائية. فريقنا من أمهر الخبراء يستخدم أرقى المنتجات العالمية وأحدث التقنيات ليصمّم لك إطلالة تعكس شخصيتك الفريدة.</p>
+        <p class="reveal" data-i18n="about_p2">نؤمن أن كل عميل يستحق اهتماماً شخصياً وأجواءً تبعث على الاسترخاء والفخامة، من لحظة دخولك وحتى آخر لمسة.</p>
+
+        <ul class="about-features reveal">
+          <li><i>✦</i> <span data-i18n="about_f1">فريق محترف ومتخصص</span></li>
+          <li><i>✦</i> <span data-i18n="about_f2">منتجات عالمية فاخرة</span></li>
+          <li><i>✦</i> <span data-i18n="about_f3">تصميم إطلالة شخصية</span></li>
+          <li><i>✦</i> <span data-i18n="about_f4">أجواء راقية ومريحة</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Stats -->
+    <div class="container stats">
+      <div class="stat reveal">
+        <strong class="count" data-target="5000">0</strong><span>+</span>
+        <p data-i18n="stat1">عميل سعيد</p>
+      </div>
+      <div class="stat reveal">
+        <strong class="count" data-target="15">0</strong><span>+</span>
+        <p data-i18n="stat2">خبير محترف</p>
+      </div>
+      <div class="stat reveal">
+        <strong class="count" data-target="10">0</strong><span>+</span>
+        <p data-i18n="stat3">سنوات خبرة</p>
+      </div>
+      <div class="stat reveal">
+        <strong class="count" data-target="40">0</strong><span>+</span>
+        <p data-i18n="stat4">خدمة احترافية</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-head center">
+        <span class="eyebrow reveal" data-i18n="serv_eyebrow">خدماتنا</span>
+        <h2 class="section-title reveal" data-i18n="serv_title">باقة متكاملة للنساء والرجال</h2>
+        <p class="section-lead reveal" data-i18n="serv_lead">خدمات مصمّمة بعناية لتمنحك أفضل النتائج بلمسة من الفخامة.</p>
+      </div>
+
+      <div class="serv-tabs reveal">
+        <button class="serv-tab active" data-tab="women" data-i18n="serv_women">قسم النساء</button>
+        <button class="serv-tab" data-tab="men" data-i18n="serv_men">قسم الرجال</button>
+      </div>
+
+      <div class="serv-grid" id="servWomen">
+        <!-- women -->
+        <article class="serv-card reveal">
+          <div class="serv-icon">✂</div>
+          <h3 data-i18n="w1_t">قصّ وتصفيف</h3>
+          <p data-i18n="w1_d">قصّات عصرية وتصفيف احترافي يبرز جمال ملامحك.</p>
+        </article>
+        <article class="serv-card reveal">
+          <div class="serv-icon">🎨</div>
+          <h3 data-i18n="w2_t">صبغة الشعر</h3>
+          <p data-i18n="w2_d">ألوان عالمية فاخرة تدوم طويلاً مع عناية كاملة.</p>
+        </article>
+        <article class="serv-card reveal">
+          <div class="serv-icon">✨</div>
+          <h3 data-i18n="w3_t">بالياج وهايلايت</h3>
+          <p data-i18n="w3_d">تدرّجات طبيعية ولمسات مضيئة تمنحك إطلالة ساحرة.</p>
+        </article>
+        <article class="serv-card reveal">
+          <div class="serv-icon">💧</div>
+          <h3 data-i18n="w4_t">علاجات الشعر</h3>
+          <p data-i18n="w4_d">جلسات ترطيب وتغذية عميقة لشعر صحي ولامع.</p>
+        </article>
+        <article class="serv-card reveal">
+          <div class="serv-icon">👰</div>
+          <h3 data-i18n="w5_t">تسريحات العرائس</h3>
+          <p data-i18n="w5_d">تسريحات راقية ليومك المميز بأدق التفاصيل.</p>
+        </article>
+        <article class="serv-card reveal">
+          <div class="serv-icon">🧴</div>
+          <h3 data-i18n="w6_t">كيراتين وبروتين</h3>
+          <p data-i18n="w6_d">فرد وتنعيم يمنح شعرك انسيابية ولمعاناً يدوم.</p>
+        </article>
+      </div>
+
+      <div class="serv-grid hidden" id="servMen">
+        <!-- men -->
+        <article class="serv-card reveal">
+          <div class="serv-icon">💈</div>
+          <h3 data-i18n="m1_t">قصّات عصرية</h3>
+          <p data-i18n="m1_d">قصّات رجالية حديثة بأيدي أمهر الحلاقين.</p>
+        </article>
+        <article class="serv-card reveal">
+          <div class="serv-icon">🧔</div>
+          <h3 data-i18n="m2_t">تصفيف اللحية</h3>
+          <p data-i18n="m2_d">تشكيل وتهذيب اللحية لإطلالة أنيقة ومرتّبة.</p>
+        </article>
+        <article class="serv-card reveal">
+          <div class="serv-icon">🪒</div>
+          <h3 data-i18n="m3_t">خدمات الحلاقة</h3>
+          <p data-i18n="m3_d">حلاقة كلاسيكية ناعمة بمنتجات فاخرة.</p>
+        </article>
+        <article class="serv-card reveal">
+          <div class="serv-icon">💧</div>
+          <h3 data-i18n="m4_t">علاجات الشعر</h3>
+          <p data-i18n="m4_d">عناية متخصصة لتقوية الشعر والحفاظ على صحته.</p>
+        </article>
+        <article class="serv-card reveal">
+          <div class="serv-icon">👑</div>
+          <h3 data-i18n="m5_t">عناية فاخرة</h3>
+          <p data-i18n="m5_d">باقات عناية متكاملة تمنحك تجربة ملكية.</p>
+        </article>
+        <article class="serv-card reveal">
+          <div class="serv-icon">✂</div>
+          <h3 data-i18n="m6_t">تصفيف وتنعيم</h3>
+          <p data-i18n="m6_d">تصفيف احترافي يمنحك إطلالة واثقة كل يوم.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section class="gallery" id="gallery">
+    <div class="container">
+      <div class="section-head center">
+        <span class="eyebrow reveal" data-i18n="gal_eyebrow">المعرض</span>
+        <h2 class="section-title reveal" data-i18n="gal_title">قبل وبعد · أعمالنا</h2>
+        <p class="section-lead reveal" data-i18n="gal_lead">لمحة من تحوّلات وإبداعات فريقنا.</p>
+      </div>
+
+      <div class="gallery-grid">
+        <a class="g-item tall reveal" href="https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&w=900&q=80" style="background-image:url('https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&w=900&q=80')"><span data-i18n="gal_1">تلوين وتصفيف</span></a>
+        <a class="g-item reveal" href="https://images.unsplash.com/photo-1605497788044-5a32c7078486?auto=format&fit=crop&w=900&q=80" style="background-image:url('https://images.unsplash.com/photo-1605497788044-5a32c7078486?auto=format&fit=crop&w=900&q=80')"><span data-i18n="gal_2">حلاقة رجالية</span></a>
+        <a class="g-item reveal" href="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?auto=format&fit=crop&w=900&q=80" style="background-image:url('https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?auto=format&fit=crop&w=900&q=80')"><span data-i18n="gal_3">عناية بالشعر</span></a>
+        <a class="g-item wide reveal" href="https://images.unsplash.com/photo-1580618672591-eb180b1a973f?auto=format&fit=crop&w=1200&q=80" style="background-image:url('https://images.unsplash.com/photo-1580618672591-eb180b1a973f?auto=format&fit=crop&w=1200&q=80')"><span data-i18n="gal_4">تسريحة مناسبات</span></a>
+        <a class="g-item reveal" href="https://images.unsplash.com/photo-1599351431613-18ef1fdd27e1?auto=format&fit=crop&w=900&q=80" style="background-image:url('https://images.unsplash.com/photo-1599351431613-18ef1fdd27e1?auto=format&fit=crop&w=900&q=80')"><span data-i18n="gal_5">تهذيب اللحية</span></a>
+        <a class="g-item tall reveal" href="https://images.unsplash.com/photo-1492106087820-71f1a00d2b11?auto=format&fit=crop&w=900&q=80" style="background-image:url('https://images.unsplash.com/photo-1492106087820-71f1a00d2b11?auto=format&fit=crop&w=900&q=80')"><span data-i18n="gal_6">بالياج فاخر</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <div class="section-head center">
+        <span class="eyebrow reveal" data-i18n="rev_eyebrow">آراء عملائنا</span>
+        <h2 class="section-title reveal" data-i18n="rev_title">ماذا يقول عملاؤنا</h2>
+      </div>
+
+      <div class="rev-grid">
+        <figure class="rev-card reveal">
+          <div class="stars">★★★★★</div>
+          <blockquote data-i18n="rev1_q">أفضل صالون زرته، خدمة احترافية ونتائج مذهلة فاقت توقعاتي بكل المقاييس.</blockquote>
+          <figcaption>
+            <img src="https://i.pravatar.cc/100?img=47" alt="" />
+            <div><strong data-i18n="rev1_n">سارة العتيبي</strong><small data-i18n="rev1_r">عميلة</small></div>
+          </figcaption>
+        </figure>
+
+        <figure class="rev-card reveal">
+          <div class="stars">★★★★★</div>
+          <blockquote data-i18n="rev2_q">فريق رائع وأجواء فاخرة تجعل التجربة مميزة في كل مرة. أنصح به بشدة.</blockquote>
+          <figcaption>
+            <img src="https://i.pravatar.cc/100?img=12" alt="" />
+            <div><strong data-i18n="rev2_n">خالد المنصور</strong><small data-i18n="rev2_r">عميل</small></div>
+          </figcaption>
+        </figure>
+
+        <figure class="rev-card reveal">
+          <div class="stars">★★★★★</div>
+          <blockquote data-i18n="rev3_q">اهتمام بأدق التفاصيل ومنتجات فاخرة، شعرت بأنني محط اهتمامهم الكامل.</blockquote>
+          <figcaption>
+            <img src="https://i.pravatar.cc/100?img=32" alt="" />
+            <div><strong data-i18n="rev3_n">نورة الحربي</strong><small data-i18n="rev3_r">عميلة</small></div>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- Booking -->
+  <section class="booking" id="booking">
+    <div class="container booking-grid">
+      <div class="booking-intro">
+        <span class="eyebrow reveal" data-i18n="book_eyebrow">احجز موعدك</span>
+        <h2 class="section-title reveal" data-i18n="book_title">احجز موعدك الآن واستمتع بإطلالة استثنائية</h2>
+        <p class="reveal" data-i18n="book_lead">املأ النموذج وسيتواصل معك فريقنا لتأكيد الموعد في أقرب وقت.</p>
+        <ul class="book-perks reveal">
+          <li><i>✦</i><span data-i18n="book_p1">تأكيد سريع خلال دقائق</span></li>
+          <li><i>✦</i><span data-i18n="book_p2">اختيار الخبير المناسب لك</span></li>
+          <li><i>✦</i><span data-i18n="book_p3">مرونة في المواعيد</span></li>
+        </ul>
+      </div>
+
+      <form class="booking-form glass reveal" id="bookingForm" novalidate>
+        <div class="field">
+          <label data-i18n="f_name">الاسم الكامل</label>
+          <input type="text" name="name" required data-i18n-ph="ph_name" placeholder="اكتب اسمك" />
+        </div>
+        <div class="field">
+          <label data-i18n="f_phone">رقم الهاتف</label>
+          <input type="tel" name="phone" required data-i18n-ph="ph_phone" placeholder="05xxxxxxxx" />
+        </div>
+        <div class="field">
+          <label data-i18n="f_service">الخدمة</label>
+          <select name="service" required>
+            <option value="" data-i18n="opt_choose">اختر الخدمة</option>
+            <option data-i18n="opt_women">قسم النساء</option>
+            <option data-i18n="opt_men">قسم الرجال</option>
+            <option data-i18n="opt_color">صبغة / بالياج</option>
+            <option data-i18n="opt_keratin">كيراتين / بروتين</option>
+            <option data-i18n="opt_bridal">تسريحة عروس</option>
+            <option data-i18n="opt_beard">حلاقة / لحية</option>
+          </select>
+        </div>
+        <div class="field two">
+          <div>
+            <label data-i18n="f_date">التاريخ المفضل</label>
+            <input type="date" name="date" required />
+          </div>
+          <div>
+            <label data-i18n="f_time">الوقت المفضل</label>
+            <input type="time" name="time" required />
+          </div>
+        </div>
+        <div class="field">
+          <label data-i18n="f_notes">ملاحظات</label>
+          <textarea name="notes" rows="3" data-i18n-ph="ph_notes" placeholder="أي تفاصيل إضافية..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-gold full" data-i18n="f_submit">تأكيد الحجز</button>
+        <p class="form-success" id="formSuccess" data-i18n="f_success">تم استلام طلبك! سنتواصل معك قريباً لتأكيد الموعد ✦</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="section-head center">
+        <span class="eyebrow reveal" data-i18n="con_eyebrow">تواصل معنا</span>
+        <h2 class="section-title reveal" data-i18n="con_title">زورونا أو تواصلوا معنا</h2>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-cards">
+          <div class="c-card reveal">
+            <div class="c-ic">📍</div>
+            <h4 data-i18n="con_addr_t">الموقع</h4>
+            <p data-i18n="con_addr">طريق الملك فهد، الرياض، المملكة العربية السعودية</p>
+          </div>
+          <div class="c-card reveal">
+            <div class="c-ic">📞</div>
+            <h4 data-i18n="con_phone_t">الهاتف</h4>
+            <p dir="ltr"><a href="tel:+46853176670">08-531 766 70</a></p>
+          </div>
+          <div class="c-card hours-card reveal">
+            <div class="c-ic">🕒</div>
+            <h4 data-i18n="con_hours_t">ساعات العمل</h4>
+            <ul class="hours-list">
+              <li><span data-i18n="day_mon">الاثنين</span><span dir="ltr">10:00 - 19:00</span></li>
+              <li><span data-i18n="day_tue">الثلاثاء</span><span dir="ltr">10:00 - 19:00</span></li>
+              <li><span data-i18n="day_wed">الأربعاء</span><span dir="ltr">10:00 - 19:00</span></li>
+              <li><span data-i18n="day_thu">الخميس</span><span dir="ltr">10:00 - 19:00</span></li>
+              <li><span data-i18n="day_fri">الجمعة</span><span dir="ltr">10:00 - 19:00</span></li>
+              <li><span data-i18n="day_sat">السبت</span><span dir="ltr">10:00 - 16:00</span></li>
+              <li><span data-i18n="day_sun">الأحد</span><span dir="ltr">11:00 - 15:00</span></li>
+            </ul>
+          </div>
+
+          <div class="c-social reveal">
+            <a href="https://wa.me/46853176670" target="_blank" rel="noopener" class="soc wa">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.945C.16 5.335 5.495 0 12.05 0a11.82 11.82 0 018.413 3.488 11.82 11.82 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.978-.607zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+              <span data-i18n="con_wa">واتساب</span></a>
+            <a href="https://www.instagram.com/hallundaharstudio/?hl=ar" target="_blank" rel="noopener" class="soc ig">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5.5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.6" cy="6.4" r="1.1" fill="currentColor" stroke="none"/></svg>
+              <span data-i18n="con_ig">إنستغرام</span></a>
+            <a href="https://www.facebook.com/pages/Hallunda-H%C3%A5rstudio/180322911996307" target="_blank" rel="noopener" class="soc fb">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07C0 18.1 4.39 23.1 10.13 24v-8.44H7.08v-3.49h3.05V9.41c0-3.02 1.79-4.69 4.53-4.69 1.31 0 2.68.24 2.68.24v2.97h-1.51c-1.49 0-1.96.93-1.96 1.89v2.25h3.33l-.53 3.49h-2.8V24C19.61 23.1 24 18.1 24 12.07z"/></svg>
+              <span data-i18n="con_fb">فيسبوك</span></a>
+            <a href="https://www.tiktok.com/@hallunda_centrum?_t=ZN-8zHw4lxkawQ&_r=1" target="_blank" rel="noopener" class="soc tt">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
+              <span data-i18n="con_tt">تيك توك</span></a>
+          </div>
+        </div>
+
+        <div class="contact-map reveal">
+          <iframe
+            title="map"
+            src="https://www.google.com/maps?q=Hallundav%C3%A4gen%201%2C%20145%2068%20Norsborg&output=embed"
+            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a href="#home" class="logo footer-logo">
+        <span class="logo-mark">H</span>
+        <span class="logo-text">Hårstudio<small data-i18n="logo_sub">صالون فاخر</small></span>
+      </a>
+      <p class="footer-tag" data-i18n="footer_tag">الجمال يبدأ من هنا.</p>
+      <div class="footer-links">
+        <a href="#about" data-i18n="nav_about">من نحن</a>
+        <a href="#services" data-i18n="nav_services">الخدمات</a>
+        <a href="#gallery" data-i18n="nav_gallery">المعرض</a>
+        <a href="#booking" data-i18n="nav_book">احجز موعد</a>
+      </div>
+      <p class="copy">© <span id="year"></span> Hårstudio — <span data-i18n="footer_rights">جميع الحقوق محفوظة</span></p>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp -->
+  <a href="https://wa.me/46853176670" class="fab-wa" target="_blank" rel="noopener" aria-label="WhatsApp">
+    <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.945C.16 5.335 5.495 0 12.05 0a11.82 11.82 0 018.413 3.488 11.82 11.82 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.978-.607zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
